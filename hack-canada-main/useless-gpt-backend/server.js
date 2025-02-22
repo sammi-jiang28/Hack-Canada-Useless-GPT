@@ -10,11 +10,18 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 // CORS
-//renamed express to corsExpress, app to corsApp; does it matter?
-var corsExpress = require('express');
-var cors = require('cors');
-var corsApp = corsExpress();
-corsApp.use(cors({origin:'localhost:3000'}));
+const allowedOrigins = ['http://localhost:3000'];
+
+app.use((req, res, next) => {
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+});
+
 
 
 
