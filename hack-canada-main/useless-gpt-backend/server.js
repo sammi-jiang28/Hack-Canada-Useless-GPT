@@ -9,6 +9,14 @@ const port = 5000;
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+// CORS
+//renamed express to corsExpress, app to corsApp; does it matter?
+var corsExpress = require('express');
+var cors = require('cors');
+var corsApp = corsExpress();
+corsApp.use(cors({origin:'localhost:3000'}));
+
+
 
 // Middleware to parse JSON
 app.use(express.json());
