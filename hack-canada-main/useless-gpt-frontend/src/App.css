@@ -2,36 +2,52 @@
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #d52b1e; /* Canadian red */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+form {
+  margin: 20px 0;
 }
 
 input {
   padding: 10px;
   width: 300px;
   margin-right: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #d52b1e; /* Canadian red */
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #d52b1e; /* Canadian red */
   color: white;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #a81c12; /* Darker red */
 }
 
 .answer {
   margin-top: 20px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  background-color: white;
+  border: 2px solid #d52b1e; /* Canadian red */
+  border-radius: 10px;
+  max-width: 600}
