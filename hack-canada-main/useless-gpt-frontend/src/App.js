@@ -19,8 +19,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Useless GPT: Canadian Edition</h1>
-      <p>Ask me anything, and I'll give you a completely useless answer related to Canada!</p>
+      <div className="Header">
+        <h1>UselessGPT</h1>
+        </div>
+        <div className="bubble">
+          
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/042/324/922/small_2x/cute-cartoon-of-a-speech-bubble-png.png" alt="Text Bubble" />
+          <div className="bubble-text">
+          Ask me anything and I'll give you the most trustworthy info!
+          </div>
+        </div>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -37,8 +46,8 @@ function App() {
           <p>{answer}</p>
         </div>
       )}
-      <div className="canadian-theme">
-        <p>Proudly made in Canada 🍁</p>
+      <div className="canadian">
+        Proudly made in Canada 🍁
       </div>
     </div>
   );
