@@ -98,8 +98,8 @@
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: red; /* Fallback color */
-  background: linear-gradient(90deg, white, red, white); /* Larger gradient */
+  color: rgb(72, 255, 0); /* Fallback color */
+  background: linear-gradient(90deg, rgb(192, 239, 184), rgb(72, 255, 0), rgb(192, 239, 184)); /* Larger gradient */
   background-size: 200% 100%; /* Double the width for smooth animation */
   -webkit-background-clip: text;
   background-clip: text;
