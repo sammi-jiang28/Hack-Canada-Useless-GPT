@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
 
@@ -7,6 +7,7 @@ function App() {
   const [answer, setAnswer] = useState('');
   const [animatedAnswer, setAnimatedAnswer] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const answerRef = useRef(null); // Ref for the scrollable container
 
   // Function to animate the answer
   useEffect(() => {
@@ -15,15 +16,22 @@ function App() {
       let index = 0;
       const interval = setInterval(() => {
         if (index < answer.length) {
-          setAnimatedAnswer((prev) => prev + answer[index -1]);
+          setAnimatedAnswer((prev) => prev + answer[index-1]);
           index++;
         } else {
           clearInterval(interval);
           setIsTyping(false);
         }
-      }, 30); // Adjust the speed of the animation here
+      }, 50); // Adjust the speed of the animation here
     }
   }, [answer]);
+
+  // Automatically scroll to the bottom when animatedAnswer changes
+  useEffect(() => {
+    if (answerRef.current) {
+      answerRef.current.scrollTop = answerRef.current.scrollHeight;
+    }
+  }, [animatedAnswer]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -75,7 +83,7 @@ function App() {
       </form>
 
       {animatedAnswer && (
-        <div className="answer">
+        <div className="answer" ref={answerRef}>
           <h2>Answer:</h2>
           <p>{animatedAnswer}</p>
         </div>
