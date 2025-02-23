@@ -26,12 +26,6 @@ function App() {
     }
   }, [answer]);
 
-  // Automatically scroll to the bottom when animatedAnswer changes
-  useEffect(() => {
-    if (answerRef.current) {
-      answerRef.current.scrollTop = answerRef.current.scrollHeight;
-    }
-  }, [animatedAnswer]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
