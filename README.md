@@ -41,9 +41,10 @@ Follow these steps to set up and run Useless GPT on your local machine.
 ### Installation
 
 1. **Clone the Repository**:
-   ```bash
+```bash
    git clone https://github.com/your-username/useless-gpt.git
    cd useless-gpt
+```
 
 2. **Set up the Backend**:
 ```bash
