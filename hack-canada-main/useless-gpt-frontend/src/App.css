@@ -5,10 +5,10 @@
 
   
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 100%;
   background-position: center bottom;
   min-height: 100vh;
-  padding-top: 10%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +28,8 @@
 
 .bubble{
   position: absolute;
-  top: 25%;
-  left: 200px;
+  top: 7%;
+  left: 500px;
   width:fit-content;
   height: fit-content;
 

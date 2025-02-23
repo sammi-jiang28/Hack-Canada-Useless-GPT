@@ -58,6 +58,8 @@ function App() {
       <img
         src = "https://pngimg.com/uploads/beaver/beaver_PNG49.png"
         alt = "beaver"
+        width = "200"
+        
         />
       </p>
 
