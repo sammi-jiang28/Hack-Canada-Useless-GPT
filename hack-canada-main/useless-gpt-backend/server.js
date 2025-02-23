@@ -88,7 +88,7 @@ app.post('/ask', async (req, res) => {
 
 // testing using localhost:3000/gemini
 app.get('/gemini', async (req, res) => {
-  const genAI = new GoogleGenerativeAI("AIzaSyBfn_Pg7qGTOTtSBpKO0cTI7fxkcqVGQQE");
+  const genAI = new GoogleGenerativeAI(process.env.API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const prompt = "Explain how AI works";
