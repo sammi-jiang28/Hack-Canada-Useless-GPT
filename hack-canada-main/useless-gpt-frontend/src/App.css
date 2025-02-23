@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .App {
@@ -34,7 +35,9 @@
 
 .answer p {
   margin: 0;
-  font-family: monospace;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  line-height: 1.2;
   white-space: pre-wrap;
   border-right: 2px solid black;
   animation: blink-caret 0.75s step-end infinite;
@@ -104,8 +107,8 @@
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: rgb(72, 255, 0);
-  background: linear-gradient(90deg, rgb(192, 239, 184), rgb(72, 255, 0), rgb(192, 239, 184));
+  color: #267c0c;
+  background: linear-gradient(90deg, #267c0c, rgb(72, 255, 0), #267c0c);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -143,7 +146,7 @@ input {
   border: 4px solid #267c0c;
   border-radius: 0;
   top: 80%;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   font-family: "Press Start 2P", cursive;
   background-color: rgb(245, 255, 245);
   color: #000;
@@ -156,8 +159,8 @@ button {
   color: rgb(245, 255, 245);
   border: 4px solid #195008;
   border-radius: 0;
-  margin-left: 55%;
-  top: 80.2%;
+  margin-left: 56%;
+  top: 79.3%;
   font-size: 1rem;
   font-family: "Press Start 2P", cursive;
   cursor: pointer;
@@ -171,8 +174,8 @@ button:hover {
 
 .canadian {
   position: absolute;
-  margin-left: 80%;
+  margin-left: 33%;
   text-align: right;
-  bottom: 5%;
-  color: rgb(245, 255, 245);
+  bottom: 9%;
+  color: rgb(201, 255, 180);
 }
