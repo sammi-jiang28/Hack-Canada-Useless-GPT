@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Press Start 2P", cursive;
   background-image: url("https://cdnb.artstation.com/p/assets/images/images/065/010/983/large/szymon-rysuje-chill-bg-01-full-hd.jpg?1689273888");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -16,20 +18,25 @@
   margin-top: 20px;
   padding: 20px;
   background-color: rgb(192, 239, 184);
-  border: 2px solid #267c0c;
-  border-radius: 10px;
+  border: 4px solid #267c0c;
+  border-radius: 0;
   max-width: 600px;
-  max-height: 300px; /* Set a fixed height for the scrollable container */
-  overflow-y: auto; /* Enable vertical scrolling */
-  width: 100%; /* Ensure it takes up the full width */
-  box-sizing: border-box; /* Include padding and border in the width */
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.75;
+  margin-right: 600px; /* Revert to left alignment */
 }
 
 .answer p {
-  margin: 0; /* Remove default margin for better alignment */
+  margin: 0;
   font-family: monospace;
   white-space: pre-wrap;
-  border-right: 2px solid black; /* Cursor effect */
+  border-right: 2px solid black;
   animation: blink-caret 0.75s step-end infinite;
 }
 
@@ -44,13 +51,13 @@
 }
 
 .Header {
-  text-align: center; /* Center the text */
+  text-align: center;
   padding: 10px 20px;
   position: fixed;
   top: 0;
-  left: 50%; /* Move to the horizontal center */
-  transform: translateX(-50%); /* Adjust for exact centering */
-  width: auto; /* Allow the header to take up only as much space as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
 }
 
 .bubble {
@@ -72,15 +79,15 @@
 
 .bubble-text {
   position: absolute;
-  top: 40%; /* Center the text vertically */
-  left: 50%; /* Center the text horizontally */
-  transform: translate(-50%, -50%); /* Adjust for exact centering */
-  width: 80%; /* Adjust text width to fit inside */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: black; /* Adjust for visibility */
-  padding: 5px; /* Add padding for better spacing */
+  color: black;
+  padding: 5px;
 }
 
 .beaver {
@@ -97,23 +104,23 @@
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: rgb(72, 255, 0); /* Fallback color */
-  background: linear-gradient(90deg, rgb(192, 239, 184), rgb(72, 255, 0), rgb(192, 239, 184)); /* Larger gradient */
-  background-size: 200% 100%; /* Double the width for smooth animation */
+  color: rgb(72, 255, 0);
+  background: linear-gradient(90deg, rgb(192, 239, 184), rgb(72, 255, 0), rgb(192, 239, 184));
+  background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  display: inline-block; /* Ensures the h1 only takes up the space of its text */
-  animation: gradientFlow 4s linear infinite; /* Smooth animation */
+  display: inline-block;
+  animation: gradientFlow 4s linear infinite;
 }
 
 @keyframes gradientFlow {
   0% {
-    background-position: 100% 0; /* Start from the right */
+    background-position: 100% 0;
   }
   100% {
-    background-position: -100% 0; /* Move to the left */
+    background-position: -100% 0;
   }
 }
 
@@ -133,10 +140,13 @@ input {
   padding: 10px;
   width: 300px;
   margin-left: 25%;
-  border: 2px solid #267c0c; /* Canadian red */
-  border-radius: 5px;
+  border: 4px solid #267c0c;
+  border-radius: 0;
   top: 80%;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(245, 255, 245);
+  color: #000;
 }
 
 button {
@@ -144,27 +154,19 @@ button {
   padding: 10px 20px;
   background-color: #267c0c;
   color: rgb(245, 255, 245);
-  border: none;
-  margin-left: 52%;
+  border: 4px solid #195008;
+  border-radius: 0;
+  margin-left: 55%;
   top: 80.2%;
-  border-radius: 5px;
   font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
   cursor: pointer;
+  box-shadow: 4px 4px 0 #195008;
 }
 
 button:hover {
-  background-color: #195008; /* Darker green */
-}
-
-.answer {
-  margin-top: 20px;
-  margin-right: 600px;
-  padding: 20px;
-  background-color: rgb(245, 255, 245);
-  border: 2px solid #267c0c;
-  border-radius: 10px;
-  max-width: 600px;
-  opacity: 0.75;
+  background-color: #195008;
+  box-shadow: 2px 2px 0 #134306;
 }
 
 .canadian {
