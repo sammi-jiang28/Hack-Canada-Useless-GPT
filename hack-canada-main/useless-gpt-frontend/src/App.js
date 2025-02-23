@@ -42,6 +42,7 @@ function App() {
     <div className="App">
       <div className="Header">
         <h1>UselessGPT</h1>
+<<<<<<< HEAD
       </div>
       <div className="bubble">
         <img
@@ -52,6 +53,16 @@ function App() {
           Ask me anything and I'll give you the most trustworthy info!
         </div>
       </div>
+=======
+        </div>
+        <div className="bubble">
+          
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/042/324/922/small_2x/cute-cartoon-of-a-speech-bubble-png.png" alt="Text Bubble" />
+          <div className="bubble-text">
+          Ask me anything and I'll give you the most trustworthy info!
+          </div>
+        </div>
+>>>>>>> 4466a2a4bd3a6d403b77be8c772e1ae2a1039a5c
 
       <form onSubmit={handleSubmit}>
         <input
@@ -70,8 +81,14 @@ function App() {
           <p>{animatedAnswer}</p>
         </div>
       )}
+<<<<<<< HEAD
 
       <div className="canadian">Proudly made in Canada 🍁</div>
+=======
+      <div className="canadian">
+        Proudly made in Canada 🍁
+      </div>
+>>>>>>> 4466a2a4bd3a6d403b77be8c772e1ae2a1039a5c
     </div>
   );
 }
