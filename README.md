@@ -46,14 +46,17 @@ Follow these steps to set up and run Useless GPT on your local machine.
    cd useless-gpt
 
 2. **Set up the Backend**:
+```bash
   cd hack-canada-main
   cd useless-gpt-backend
   npm install
   npm start
+```
 
-
-3. **Set up the Frontend**:
+3. **Set up the Backend**:
+```bash
   cd hack-canada-main
-  cd useless-gpt-frontend
+  cd useless-gpt-backend
   npm install
   npm start
+```
