@@ -1,15 +1,80 @@
 .App {
   text-align: center;
-  padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-image: url("https://pngimg.com/uploads/beaver/beaver_PNG49.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center bottom;
   min-height: 100vh;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header {
+  text-align: left;
+  padding: 10px 20px;
+  background-color:#ffffff; /* Canadian red */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+.bubble{
+  position: absolute;
+  top: 25%;
+  left: 200px;
+  width:fit-content;
+  height: fit-content;
+
+
+  color: black;
+  text-align:left;
+}
+
+.bubble img{
+  width: 300px;
+  height:auto;
+}
+
+.bubble-text {
+  position: absolute;
+  top: 40%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  width: 80%; /* Adjust text width to fit inside */
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: black; /* Adjust for visibility */
+  padding: 5px; /* Add padding for better spacing */
 }
 
 h1 {
-  color: #d52b1e; /* Canadian red */
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: red; /* Fallback color */
+  background: linear-gradient(90deg, white, red, white); /* Larger gradient */
+  background-size: 200% 100%; /* Double the width for smooth animation */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block; /* Ensures the h1 only takes up the space of its text */
+  animation: gradientFlow 4s linear infinite; /* Smooth animation */
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 100% 0; /* Start from the right */
+  }
+  100% {
+    background-position: -100% 0; /* Move to the left */
+  }
 }
 
 p {
@@ -19,6 +84,9 @@ p {
 
 form {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
+
 }
 
 input {
@@ -27,6 +95,7 @@ input {
   margin-right: 10px;
   border: 2px solid #d52b1e; /* Canadian red */
   border-radius: 5px;
+  top:50%;
   font-size: 1rem;
 }
 
@@ -50,4 +119,10 @@ button:hover {
   background-color: white;
   border: 2px solid #d52b1e; /* Canadian red */
   border-radius: 10px;
-  max-width: 600}
+  max-width: 600
+}
+
+.canadian{
+    text-align:right;
+    bottom: 10%;
+  }

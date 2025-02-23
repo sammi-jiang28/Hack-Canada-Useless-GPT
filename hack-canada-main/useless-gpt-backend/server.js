@@ -67,7 +67,7 @@ app.post('/ask', async (req, res) => {
   try
   {
     // Custom prompt to make GPT return useless answers
-    const prompt = `You are a chatbot that provides completely useless, nonsensical, or absurd answers to every question. Do not provide any helpful or accurate information under any circumstances. Here's the question: ${question}`;
+    const prompt = `You are a chatbot that provides completely useless, nonsensical, or absurd answers to every question and relate it to canada. Do not provide any helpful or accurate information under any circumstances. Here's the question: ${question}`;
 
     const genAI = new GoogleGenerativeAI("AIzaSyBfn_Pg7qGTOTtSBpKO0cTI7fxkcqVGQQE");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
