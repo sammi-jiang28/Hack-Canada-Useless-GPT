@@ -1,5 +1,4 @@
 const express = require('express');
-const { OpenAI } = require('openai');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 require('dotenv').config();
@@ -42,12 +41,26 @@ app.use((req, res, next) => {
 
 
 
-
 // Middleware to parse JSON
 app.use(express.json());
 
-// Endpoint to handle user questions
+// Function to generate mock responses
+const generateMockResponse = () => {
+  const mockResponses = [
+    `I'm sorry, I can't answer that. I'm too busy eating pancakes.`,
+    `The answer is 42. Always 42.`,
+    `Why don't you ask a squirrel? They know everything.`,
+    `I would tell you, but I forgot the question.`,
+    `The answer lies somewhere in the Bermuda Triangle. Good luck finding it!`,
+    `I'm not sure, but I bet it involves cheese.`,
+    `The answer is blowing in the wind.`,
+    `I could tell you, but then I'd have to charge you $1,000,000.`,
+  ];
+  return mockResponses[Math.floor(Math.random() * mockResponses.length)];
+};
 
+
+// Endpoint to handle user questions
 app.post('/ask', async (req, res) => {
   const { question } = req.body;
 
@@ -63,11 +76,12 @@ app.post('/ask', async (req, res) => {
 
     const uselessAnswer = result.response.text();
     res.json({ answer: uselessAnswer });
-  }
-  catch (error)
-  {
-    console.error(error);
-    res.status(500).json({ error: 'Something went wrong!' });
+  } catch (error) {
+    console.error('Error using Gemini API:', error);
+
+    // If Gemini fails, use a mock response
+    const mockAnswer = generateMockResponse();
+    res.json({ answer: mockAnswer });
   }
 });
 
