@@ -2,23 +2,50 @@
   text-align: center;
   font-family: Arial, sans-serif;
   background-image: url("https://cdnb.artstation.com/p/assets/images/images/065/010/983/large/szymon-rysuje-chill-bg-01-full-hd.jpg?1689273888");
-
-  
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
   min-height: 100vh;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.answer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #d52b1e; /* Canadian red */
+  border-radius: 10px;
+  max-width: 600px;
+  max-height: 300px; /* Set a fixed height for the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%; /* Ensure it takes up the full width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.answer p {
+  margin: 0; /* Remove default margin for better alignment */
+  font-family: monospace;
+  white-space: pre-wrap;
+  border-right: 2px solid black; /* Cursor effect */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 .Header {
   text-align: left;
   padding: 10px 20px;
-  /*background-color:#ffffff;*/
   position: fixed; 
   top: 0;
   left: 0;
