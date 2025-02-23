@@ -69,7 +69,7 @@ app.post('/ask', async (req, res) => {
     // Custom prompt to make GPT return useless answers
     const prompt = `You are a chatbot that provides bogus advice to the user; this advice should also be somehow related to Canada. Do not provide any helpful or accurate information under any circumstances. Here's the question: ${question}`;
 
-    const genAI = new GoogleGenerativeAI("AIzaSyBfn_Pg7qGTOTtSBpKO0cTI7fxkcqVGQQE");
+    const genAI = new GoogleGenerativeAI(process.env.API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const result = await model.generateContent(prompt);
