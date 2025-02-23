@@ -55,8 +55,8 @@
 
 .bubble{
   position: absolute;
-  top: 7%;
-  left: 500px;
+  top: 25%;
+  left: 200px;
   width:fit-content;
   height: fit-content;
 
@@ -143,19 +143,12 @@ button:hover {
 }
 
 .answer {
-  position: absolute;
-  margin-top: 40%;
+  margin-top: 20px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
   background-color: white;
   border: 2px solid #d52b1e; /* Canadian red */
   border-radius: 10px;
-  max-height: 200px;
-  overflow-y: auto;
-  overflow-anchor: none;
+  max-width: 600
 }
 
 .canadian{
