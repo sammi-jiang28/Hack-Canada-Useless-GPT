@@ -1,9 +1,11 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
-  background-image: url("https://pngimg.com/uploads/beaver/beaver_PNG49.png");
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/065/010/983/large/szymon-rysuje-chill-bg-01-full-hd.jpg?1689273888");
+
+  
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 110%;
   background-position: center bottom;
   min-height: 100vh;
   padding-top: 10%;
@@ -16,7 +18,7 @@
 .Header {
   text-align: left;
   padding: 10px 20px;
-  background-color:#ffffff; /* Canadian red */
+  /*background-color:#ffffff;*/
   position: fixed; 
   top: 0;
   left: 0;

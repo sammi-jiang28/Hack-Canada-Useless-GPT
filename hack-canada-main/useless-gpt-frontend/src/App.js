@@ -48,10 +48,18 @@ function App() {
           src="https://static.vecteezy.com/system/resources/thumbnails/042/324/922/small_2x/cute-cartoon-of-a-speech-bubble-png.png"
           alt="Text Bubble"
         />
+        
         <div className="bubble-text">
           Ask me anything and I'll give you the most trustworthy info!
         </div>
       </div>
+      {/* <!-- this part needs changing --> */}
+      <p>
+      <img
+        src = "https://pngimg.com/uploads/beaver/beaver_PNG49.png"
+        alt = "beaver"
+        />
+      </p>
 
       <form onSubmit={handleSubmit}>
         <input
