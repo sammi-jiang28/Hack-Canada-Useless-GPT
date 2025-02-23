@@ -56,14 +56,12 @@ function App() {
         </div>
       </div>
       {/* <!-- this part needs changing --> */}
-      <p>
-      <img
-        src = "https://pngimg.com/uploads/beaver/beaver_PNG49.png"
-        alt = "beaver"
-        width = "200"
-        
-        />
-      </p>
+      <div className="beaver">
+        <img
+          src = "https://cdn.discordapp.com/attachments/1340816099591065610/1343108380935458826/pxArt_1.png?ex=67bc12a7&is=67bac127&hm=cfdd5037283a15a84cce9cd83a9e6cd91e6302174fc0a3f74688949d109e3d9d&"
+          alt = "beaver"
+          />
+      </div>
 
       <form onSubmit={handleSubmit}>
         <input
