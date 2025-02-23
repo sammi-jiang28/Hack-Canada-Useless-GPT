@@ -47,7 +47,7 @@ function App() {
       </div>
       <div className="bubble">
         <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/042/324/922/small_2x/cute-cartoon-of-a-speech-bubble-png.png"
+          src="https://media.discordapp.net/attachments/1340816099591065610/1343210206536138854/pxArt_3.png?ex=67bc717c&is=67bb1ffc&hm=356a9cbc567ec94174ba57639232c41e4d1cb06d10bd89e5b9997038194e8972&=&format=webp&quality=lossless&width=725&height=500"
           alt="Text Bubble"
         />
         
